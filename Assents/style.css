@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F2E205;
+}
+
+img{
+    height: 20vh;
+}
+
+header{
+    background-color: #F2CB05;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.container{
+    background-color: #A69C0D;
+    padding: 30px;
+    height: 60vh;
+    width: 60vw;
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+    background-color: #736C12;
+    padding: 20px;
+}
