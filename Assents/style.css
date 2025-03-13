@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: #F2E205;
+    background-color: rgb(32, 32, 32);
+    color: white;
 }
 
 img{
@@ -12,25 +13,57 @@ img{
 }
 
 header{
-    background-color: #F2CB05;
+    background-color: rgb(15, 15, 15);
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 30px;
     padding: 20px;
+    color: white;
 }
 
-.container{
-    background-color: #A69C0D;
-    padding: 30px;
-    height: 60vh;
-    width: 60vw;
+.recepcao{
+    margin: 20px;
+    height: 90vh;
+    border: solid 1px white;
 }
 
-.container a{
-    text-decoration: none;
-    color: black;
-    background-color: #736C12;
+.recepcao a{
     padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+    margin-top: 10px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #F2CB05;
+    padding: 30px;
+    max-width: 1500px;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#container a{
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+}
+
+#container a:hover{
+    background-color: rgb(48, 48, 48);
+    transition: all 300ms;
+    transform: scale(1.1);
 }
