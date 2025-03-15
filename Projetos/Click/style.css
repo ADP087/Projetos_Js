@@ -7,11 +7,7 @@ body{
     background-color: rgb(32, 32, 32);
     color: white;
 }
-
-img{
-    height: 20vh;
-}
-
+/*====Cabeçario====*/
 header{
     background-color: rgb(15, 15, 15);
     display: flex;
@@ -21,26 +17,51 @@ header{
     gap: 30px;
     padding: 20px;
     color: white;
+    margin-bottom: 20px;
 }
 
-h2{
+header img{
+    height: 20vh;
+}
+
+header h1{
     text-align: center;
     margin: 20px;
+    font-size: 20pt;
 }
 
+/*====Parte do contador====*/
 .container{
     background-color: #F2CB05;
+    color: #0f0f0f;
     max-width: 1000px;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 70vh;
     margin: auto;
     border-radius: 15px;
+    font-size: 18pt;
+}
+
+.container h2{
+    text-align: center;
+    height: 10%;
+    padding: 20px;
 }
 
 .container .numero{
-    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+}
+
+.container .botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    gap: 30px;
 }
 
 .container .botoes button{
