@@ -45,6 +45,7 @@ header h1{
     color: #0f0f0f;
     max-width: 1000px;
     margin: auto;
+    padding: 20px;
     border-radius: 15px;
     font-size: 18pt;
 }
@@ -86,4 +87,18 @@ header h1{
 
 #form button:hover{
     background-color: var(--botoes-hover);
+}
+
+.paragrafo-resultado{
+    background-color: #90ee90;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bad{
+    background-color: #f08080;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
 }
