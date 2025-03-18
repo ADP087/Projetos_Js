@@ -8,7 +8,7 @@ body{
     color: white;
 }
 
-img{
+header img{
     height: 20vh;
 }
 
@@ -24,9 +24,9 @@ header{
 }
 
 .recepcao{
-    margin: 20px;
-    height: 90vh;
-    border: solid 1px white;
+    height: 100vh;
+    display: flex;
+    margin-bottom: 10px;
 }
 
 .recepcao a{
