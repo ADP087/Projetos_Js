@@ -1,15 +1,23 @@
+:root{
+    --corpo: #202020;
+    --botoes: #0f0f0f;
+    --botoes-hover: #303030;
+    --container: #F2CB05;
+    --header: #0f0f0f;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: var(--corpo);
     color: white;
 }
 /*====Cabeçario====*/
 header{
-    background-color: rgb(15, 15, 15);
+    background-color: var(--header);
     display: flex;
     text-align: center;
     align-items: center;
@@ -32,7 +40,7 @@ header h1{
 
 /*====Parte do contador====*/
 .container{
-    background-color: #F2CB05;
+    background-color: var(--container);
     color: #0f0f0f;
     max-width: 1000px;
     height: 70vh;
@@ -67,13 +75,13 @@ header h1{
 .container .botoes button{
     padding: 20px;
     width: 10vw;
-    background-color: #0f0f0f;
+    background-color: var(--botoes);
     color: white;
-    border: solid 1px #0f0f0f;
+    border: solid 1px var(--botoes);
     border-radius: 10px;
     cursor: pointer;
 }
 
 .container .botoes button:hover{
-    background-color: #303030;
+    background-color: var(--botoes-hover);
 }
