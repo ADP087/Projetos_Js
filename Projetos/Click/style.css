@@ -57,6 +57,7 @@ header h1{
 
 .container .numero{
     display: flex;
+    font-size: 30px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -84,4 +85,20 @@ header h1{
 
 .container .botoes button:hover{
     background-color: var(--botoes-hover);
+}
+
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .container{
+        font-size: 16pt;
+        padding: 15px;
+    }
+
+    .container .botoes button{
+        font-size: 14pt;
+        padding: 25px 0px;
+    }
 }
