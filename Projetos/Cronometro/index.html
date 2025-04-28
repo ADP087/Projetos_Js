@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../Assents/Midia/javascript.png" type="image/x-icon">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .container {
+            height: 65vh;
+            display: flex; /* Ativa o flexbox */
+            flex-direction: column; /* Alinha os elementos verticalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+        }
+
+        .relogio {
+            font-size: 5em;
+        }
+
+        .relogio span {
+            font-size: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html"><img src="./../../Assents/Midia/javascript.png" alt="Logo_Js"></a>
+        <h1>Cronômetro</h1>
+    </header>
+
+    <div class="container">
+        <p class="relogio"> 00:00<span>:00</span></p>
+
+        <div class="botoes">
+            <button class="iniciar">Iniciar</button>
+            <button class="pausar">Pausar</button>
+            <button class="zerar">Zerar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -52,3 +52,28 @@ header h1 {
     font-size: 20px;
     text-align: center;
 }
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    gap: 30px;
+}
+
+.botoes button{
+    padding: 20px;
+    width: 10vw;
+    background-color: var(--botoes);
+    color: white;
+    font-size: 1em;
+    border: solid 1px var(--botoes);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botoes button:hover{
+    background-color: var(--botoes-hover);
+    border: solid 1px var(--botoes-hover);
+}
