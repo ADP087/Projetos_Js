@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../../Assents/Midia/javascript.png" type="image/x-icon">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        #input-tarefa {
+            height: 30px;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+        }
+
+        .tarefas {
+            background-color: white;
+            height: 50vh;
+            width: 50vh;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .tarefas ul li{
+            list-style: none;
+            text-align: left;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html"><img src="./../../Assents/Midia/javascript.png" alt="Logo_Js"></a>
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <div class="container">
+        <h2>Adicione uma nova tarefa:</h2>
+        <input type="text" id="input-tarefa" placeholder="Digite sua tarefa">
+        <button class="botao-ind">Adicionar</button>
+
+        <div class="tarefas">
+            <ul id="lista-tarefas">
+                <!-- As tarefas serão adicionadas aqui dinamicamente -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
