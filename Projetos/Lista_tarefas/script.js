@@ -19,26 +19,44 @@ btnAdicionar.addEventListener('click', function() {
 
 function criaTarefa(texto) {
     const li = criaLi(texto);
+    const div = criaDiv();
 
     listaTarefas.appendChild(li);
 
-    criaEdit(li);
-    criaExcluir(li);
+    li.appendChild(div);
+
+    div.appendChild(criaEdit(li));
+    div.appendChild(criaExcluir(li));
+
     limpaInput();
 }
 
+// ==== Cria os elementos ====
 function criaLi(texto) {
     const li = document.createElement('li');
-    li.addEventListener('click', function() {
-        li.classList.toggle('clicado');
-    })
 
     const p = criaP();
     p.textContent = texto;
 
+    const checkbox = criaCheckbox();
+    
+    li.appendChild(checkbox);
     li.appendChild(p);
 
+    li.addEventListener('click', function(e) {
+        li.classList.toggle('clicado');
+        if (e.target === checkbox) return;
+        checkbox.checked = !checkbox.checked;
+    })
+
     return li;
+}
+
+function criaCheckbox() {
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+
+    return checkbox;
 }
 
 function criaP() {
@@ -47,16 +65,24 @@ function criaP() {
     return p;
 }
 
+function criaDiv() {
+    const div = document.createElement('div');
+    div.setAttribute('class', 'botoes-tarefa');
+
+    return div;
+}
+
 function limpaInput() {
     inputTarefa.value = '';
     inputTarefa.focus();
 }
 
+// ==== Cria os botões de editar e excluir ====
 function criaEdit(li) {
     const btnEdit = document.createElement('button');
     btnEdit.textContent = 'Editar';
 
-    btnEdit.setAttribute('class', 'botao-ind edit');
+    btnEdit.setAttribute('class', 'edit');
     btnEdit.setAttribute('title', 'Editar tarefa');
 
     btnEdit.addEventListener('click', function() {
@@ -69,19 +95,19 @@ function criaEdit(li) {
         }
     })
 
-    li.appendChild(btnEdit);
+    return btnEdit;
 }
 
 function criaExcluir(li) {
     const btnExcluir = document.createElement('button');
     btnExcluir.textContent = 'Excluir';
 
-    btnExcluir.setAttribute('class', 'botao-ind excluir');
+    btnExcluir.setAttribute('class', 'excluir');
     btnExcluir.setAttribute('title', 'Excluir tarefa');
 
     btnExcluir.addEventListener('click', function() {
         li.remove();
     })
 
-    li.appendChild(btnExcluir);
+    return btnExcluir;
 }
