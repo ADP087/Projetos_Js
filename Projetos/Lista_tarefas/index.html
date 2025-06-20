@@ -22,19 +22,47 @@
             border-radius: 10px;
             margin: auto;
             margin-top: 20px;
+            overflow-y: auto;
         }
 
         .tarefas ul li{
             list-style: none;
-            text-align: left;
             display: flex;
             width: 100%;
-            justify-content: space-between;
             padding: 10px;
             cursor: pointer;
         }
 
-        .botoes-tarefa{}
+        ul li input{
+            width: 20px;
+            height: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        ul li p{
+            margin-left: 10px;
+            font-size: 1.1em;
+        }
+
+        ul li .botoes-tarefa{
+            display: flex;
+            margin-left: auto;
+            gap: 10px;
+        }
+
+        .botoes-tarefa button{
+            background-color: var(--botoes);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .botoes-tarefa button:hover{
+            background-color: var(--botoes-hover);
+        }
 
         .clicado p{
             text-decoration: line-through;
