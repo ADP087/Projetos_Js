@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../../Assents/Midia/javascript.png" type="image/x-icon">
+    <title>Quadro Kanban</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            min-height: 700px;
+        }
+
+        .colun{
+            background-color: var(--botoes-hover);
+            color: white;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        h2{
+            padding: 10px;
+        }
+
+        .card{
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            border: solid 1px black;
+            box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html"><img src="./../../Assents/Midia/javascript.png" alt="Logo_Js"></a>
+        <h1>Quadro Kanban</h1>
+    </header>
+
+    <div class="container">
+        
+        <!-- Coluna 01-->
+        <div class="colun">
+            <h2>Iniciar</h2>
+
+            <div class="colun-cards">
+                <div class="card" draggable="true">
+                    <h3>Plano 01</h3>
+                </div>
+                <div class="card" draggable="true">
+                    <h3>Plano 02</h3>
+                </div>
+                <div class="card" draggable="true">
+                    <h3>Plano 03</h3>
+                </div>
+                <div class="card" draggable="true">
+                    <h3>Plano 04</h3>
+                </div>
+                <div class="card" draggable="true">
+                    <h3>Plano 05</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna 02-->
+        <div class="colun">
+            <h2>Em Andamento</h2>
+
+            <div class="colun-cards">
+                
+            </div>
+        </div>
+
+        <!-- Coluna 03-->
+        <div class="colun">
+            <h2>Finalizado</h2>
+
+            <div class="colun-cards">
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
