@@ -4,6 +4,7 @@
     --botoes-hover: #303030;
     --container: #F2CB05;
     --header: #0f0f0f;
+    --letras-brancas: #ffffff;
 }
 
 *{
@@ -14,7 +15,7 @@
 
 body{
     background-color: var(--corpo);
-    color: white;
+    color: var(--letras-brancas);
 }
 
 .recepcao{
@@ -30,7 +31,7 @@ body{
 .recepcao a{
     padding: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--letras-brancas);
     border-radius: 10px;
     background-color: var(--botoes);
     margin-top: 10px;
@@ -52,7 +53,7 @@ body{
 .botao {
     background: linear-gradient(45deg, #ffcc00, #ff9900);
     border: none;
-    color: white;
+    color: var(--letras-brancas);
     padding: 15px 40px;
     font-size: 20px;
     font-weight: bold;
@@ -83,6 +84,8 @@ body{
     border-radius: 10px;
     margin: auto;
     margin-top: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 #container a{
@@ -92,7 +95,7 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: var(--letras-brancas);
     border-radius: 10px;
     background-color: var(--botoes);
 }
@@ -106,9 +109,24 @@ body{
 /*==== Footer ====*/
 footer{
     background-color: var(--header);
-    gap: 20px;
-    padding: 20px;
-    color: white;
-    flex-wrap: wrap;
+    color: var(--letras-brancas);
+    display: flex;
     margin-top: 100px;
+    padding: 15px;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+footer a{
+    color: var(--letras-brancas);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
