@@ -12,6 +12,8 @@ document.querySelectorAll('.colun').forEach(coluna => {
     coluna.addEventListener('dragover', e => {
         e.preventDefault();
 
+        document.querySelectorAll('.colun').forEach( col => col.classList.remove('card-hover'));
+        
         coluna.classList.add('card-hover');
     });
 
