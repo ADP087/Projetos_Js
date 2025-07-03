@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../../Assents/Midia/javascript.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@12.4.1/lib/browser/math.min.js"></script>
+    <title>ApprendCode - JS - Calculadora</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        #display{
+            height: 8vh;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            text-align: right;
+            border: none;
+            border: solid 1px rgba(0, 0, 0, 0.185);
+        }
+
+        #display:focus {
+            outline: none;
+            caret-color: transparent;
+        }
+
+        table {
+            height: 100%;
+            width: 100%;
+        }
+
+        .btn{
+            height: 8vh;
+            width: 8vh;
+            font-size: 2em;
+            border: solid 1px rgba(0, 0, 0, 0.185);
+        }
+
+        .btn:hover{
+            border: solid 1px rgba(0, 0, 0, 0.185);
+        }
+
+        .btn-res{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html"><img src="./../../Assents/Midia/javascript.png" alt="Logo_Js"></a>
+        <h1>Calculadora</h1>
+    </header>
+
+    <div class="container">
+        <div class="calculadora">
+        <input type="text" id="display">
+
+        <div class="botoes">
+            <table>
+                <tr>
+                    <td><button class="btn btn-clear">C</button></td>
+                    <td><button class="btn btn-del">&laquo;</button></td>
+                    <td><button class="btn btn-op">/</button></td>
+                    <td><button class="btn btn-op">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-num">7</button></td>
+                    <td><button class="btn btn-num">8</button></td>
+                    <td><button class="btn btn-num">9</button></td>
+                    <td><button class="btn btn-op">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-num">4</button></td>
+                    <td><button class="btn btn-num">5</button></td>
+                    <td><button class="btn btn-num">6</button></td>
+                    <td><button class="btn btn-op">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-num">1</button></td>
+                    <td><button class="btn btn-num">2</button></td>
+                    <td><button class="btn btn-num">3</button></td>
+                    <td rowspan="2"><button class="btn btn-res">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width: 100%;"><button class="btn btn-num" style="width: 100%;">0</button></td>
+                    <td><button class="btn btn-op">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/arthurpassarelli" target="_blank">
+            <img src="./../../Assents/Midia/linkedin_logo_icon.png" alt="Link para o linkedin">
+        </a>
+        <a href="https://github.com/ADP087" target="_blank">
+            <img src="./../../Assents/Midia/github-logo_icon.png" alt="Link para o github">
+        </a>
+
+            <h3>Arthur Passarelli</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
