@@ -13,7 +13,11 @@ calculadora.addEventListener('click', (e) => {
         const operadores = ['+', '-', '*', '/', 'x', '.'];
         const ultimo = display.value.slice(-1); // último caractere do display
 
-        if(operadores.includes(ultimo)) { // .includes - Verifica se o array contém o valor informado (ultimo)
+        if(operadores.includes(ultimo)) { // .includes - Verifica se a variavel 'ultimo' é um dos elementos do array
+            return;
+        }
+
+        if (display.value === 0) {
             return;
         }
 
@@ -64,9 +68,10 @@ function resConta() {
     if (!display.value) {
         return;
     }
-    
+
     let conta = display.value.replace(/x/g, '*'); // Troca todos os 'x' por '*', g no regex significa “global”, ou seja, troca todas as ocorrências de 'x'.
-    const ultimo = conta.slice(-1);
+
+    const ultimo = display.value.slice(-1); // último caractere do display
 
     if(isNaN(ultimo)) {
         conta += '0';
