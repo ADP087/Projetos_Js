@@ -6,6 +6,17 @@
     <link rel="shortcut icon" href="./../../Assents/Midia/javascript.png" type="image/x-icon">
     <title>Compras</title>
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .produto{
+            display: flex;
+        }
+
+        .botoes button{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,32 +29,56 @@
 
         <div class="produtos">
             <div class="produto">
-                <p>Celular</p>
+                <p>Celular: R$<span class="valor">1.100,00</span></p> 
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
             <div class="produto">
-                <p>Tablet</p>
+                <p>Tablet: R$<span class="valor">800,00</span></p>
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
             <div class="produto">
-                <p>Notebook</p>
+                <p>Notebook: R$<span class="valor">1.500,00</span></p>
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
             <div class="produto">
-                <p>Computador Gamer</p>
+                <p>Computador Gamer: R$<span class="valor">3000,00</span></p>
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
             <div class="produto">
-                <p>Cama</p>
+                <p>Cama: R$<span class="valor">2000,00</span></p>
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
             <div class="produto">
-                <p>Mesa</p>
+                <p>Mesa: R$<span class="valor">700,00</span></p>
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
             <div class="produto">
-                <p>Sofá</p>
+                <p>Sofá: R$<span class="valor">900,00</span></p>
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
             <div class="produto">
-                <p>Geladeira</p>
+                <p>Geladeira: R$<span class="valor">2.300,00</span></p>
+                <div class="botoes"> 
+                    <button class="menos">-</button><span>0</span><button class="mais">+</button>
+                </div>
             </div>
         </div>
 
-        <p class="total">Total: R$0,00</p>
+        <p class="total">Total: R$<span class="vaTotal">0,00</span></p>
     </div>
 
     <footer>
