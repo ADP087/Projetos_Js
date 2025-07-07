@@ -10,14 +10,19 @@ calculadora.addEventListener('click', (e) => {
     }
 
     if(el.classList.contains('btn-op')){
-        const operadores = ['+', '-', '*', '/', 'x', '.'];
+        const operadores = ['+', '-', '*', '/', 'x', 'X', '.'];
         const ultimo = display.value.slice(-1); // último caractere do display
 
-        if(operadores.includes(ultimo)) { // .includes - Verifica se a variavel 'ultimo' é um dos elementos do array
+        if (!display.value) {
+            if(el.textContent === '-' || el.textContent === '+') {
+                paraDisplay(el.textContent);
+                return;
+            }
+
             return;
         }
 
-        if (display.value === 0) {
+        if(operadores.includes(ultimo)) { // .includes - Verifica se a variavel 'ultimo' é um dos elementos do array 'operadores'
             return;
         }
 
@@ -69,7 +74,7 @@ function resConta() {
         return;
     }
 
-    let conta = display.value.replace(/x/g, '*'); // Troca todos os 'x' por '*', g no regex significa “global”, ou seja, troca todas as ocorrências de 'x'.
+    let conta = display.value.replace(/x/gi, '*'); // Troca todos os 'x' por '*', g no regex significa “global”, ou seja, troca todas as ocorrências de 'x'. E o i deixa todas as letras minusculas
 
     const ultimo = display.value.slice(-1); // último caractere do display
 

@@ -10,7 +10,7 @@ mais.forEach(btn => {
         const spanValor = produto.querySelector('.valor');
         const span = btn.parentElement.querySelector('span');
 
-        let valor = Number(parseValor(spanValor.innerText));
+        let valor = parseValor(spanValor.innerText);
         let quant = Number(span.innerText);
 
         console.log(`1: ${valor}`);
@@ -35,12 +35,12 @@ menos.forEach(btn => {
         let quant = Number(span.innerText);
 
         quant--;
-        total -= valor;
-
         if(quant < 0) {
             quant = 0;
             return;
         }
+        
+        total -= valor;
 
         span.innerText = quant;
         spanTotal.innerText = total.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
