@@ -1,7 +1,7 @@
 const corpo = document.body;
 const color = document.querySelector('#cor');
 
-const defaultColor = '#000000';
+const defaultColor = '#FFFFFF';
 corpo.style.backgroundColor = defaultColor;
 
 // Sempre que o usuário mexe no input, a cor munda automaticamente

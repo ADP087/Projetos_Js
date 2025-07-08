@@ -23,6 +23,21 @@ mais.addEventListener('click', function(){
     resultado.textContent = contador + ' Clicks';
 });
 
+// ==== Botão MENOS
+const menos = document.querySelector('#menos');
+
+menos.addEventListener('click', function(){
+    contador--;
+
+    if(contador == 0 || contador < 0) {
+        contador = 0;
+        resultado.textContent = contador;
+        return;
+    }
+
+    resultado.textContent = contador + ' Clicks';
+});
+
 // ==== Botão RESET
 const resetar = document.querySelector('#reset');
 

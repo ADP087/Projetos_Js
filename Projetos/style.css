@@ -92,6 +92,29 @@ header h1 {
     border: solid 1px var(--botoes-hover);
 }
 
+/*==== Arquivos ====*/
+.arquivos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20%;
+    margin-bottom: 20px;
+}
+
+.arquivos a{
+    padding: 1%;
+    color: white;
+    background-color: var(--botoes);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.arquivos a:hover{
+    background-color: var(--botoes-hover);
+}
+
 /*==== Footer ====*/
 footer{
     background-color: var(--header);
