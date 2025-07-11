@@ -1,10 +1,16 @@
 const corpo = document.body;
 const color = document.querySelector('#cor');
 
-const defaultColor = '#FFFFFF';
+const defaultColor = color.value;
 corpo.style.backgroundColor = defaultColor;
 
 // Sempre que o usuário mexe no input, a cor munda automaticamente
 color.addEventListener('input', function mudarCor() {
     corpo.style.backgroundColor = color.value;
 });
+
+function menuOnClick(){
+    document.querySelector('.menu-bar').classList.toggle('change');
+    document.querySelector('.nav-prim').classList.toggle('change');
+    document.querySelector('.menu-bg').classList.toggle('change-bg');
+}
