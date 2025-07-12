@@ -4,6 +4,9 @@
     --botoes-hover: #303030;
     --container: #F2CB05;
     --header: #0f0f0f;
+    --menu: #0f0f0f;
+    --mini-menu: #202020;
+    --mini-menu-hover: #303030;
     --letras-brancas: #ffffff;
 }
 
@@ -62,14 +65,14 @@ header h1 {
     display: flex;
     flex-direction: column;
     width: 35px;
-    gap: 8px;
+    gap: 5px;
 }
 
 .bar {
     width: 100%;
-    height: 5px;
+    height: 6px;
     background-color: var(--letras-brancas);
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.3s ease;
 }
 
@@ -81,39 +84,82 @@ header h1 {
     transform: translateY(4px);
 }
 
-.nav-prim img{
+.nav-prim img {
     height: 30%;
     width: 100%;
 }
+
 .nav-prim {
     position: fixed;
     top: 0;
-    left: -300px; /* Escondido à esquerda */
+    left: -300px;
     width: 300px;
     height: 100vh;
-    background-color: #111;
+    background-color: var(--menu);
     transition: left 0.3s ease;
     z-index: 2;
     padding-top: 60px;
+    font-size: 2.5em;
 }
 
 .nav-prim.change {
     left: 0;
 }
 
-.nav-prim ul {
-    padding: 0 22px;
-}
-
-.nav-prim li {
-    list-style: none;
-    padding: 12px 0;
-}
-
-.nav-prim li a {
+.nav-prim a {
+    display: block;
     color: var(--letras-brancas);
-    font-size: 20px;
     text-decoration: none;
+    padding: 20px;
+}
+
+.nav-prim a:hover {
+    background-color: var(--mini-menu-hover);
+}
+
+/* Menu dos projetos */
+.nav-sec {
+    font-size: 0.8em;
+}
+
+.nav-sec p {
+    background-color: var(--mini-menu);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-sec .links {
+    background-color: var(--mini-menu);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.nav-sec .links.sec-open {
+    max-height: 500px;
+}
+
+.nav-sec li {
+    cursor: pointer;
+}
+
+.nav-sec a {
+    padding: 5px;
+    font-size: 0.5em;
+}
+
+.nav-sec p:hover, li:hover {
+    background-color: var(--mini-menu-hover);
+}
+
+/* Seta */
+#seta {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.girar {
+    transform: rotate(180deg);
 }
 
 /* Fundo escuro atrás do menu */
@@ -233,7 +279,7 @@ footer{
 }
 
 footer img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
 }
