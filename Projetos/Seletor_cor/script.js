@@ -1,14 +1,3 @@
-const corpo = document.body;
-const color = document.querySelector('#cor');
-
-const defaultColor = color.value;
-corpo.style.backgroundColor = defaultColor;
-
-// Sempre que o usuário mexe no input, a cor munda automaticamente
-color.addEventListener('input', function mudarCor() {
-    corpo.style.backgroundColor = color.value;
-});
-
 function menuOnClick(){
     document.querySelector('.menu-bar').classList.toggle('change');
     document.querySelector('.nav-prim').classList.toggle('change');
@@ -19,3 +8,14 @@ function menuSecOpen(){
     document.querySelector('.links').classList.toggle('sec-open');
     document.querySelector('#seta').classList.toggle('girar');
 }
+
+const corpo = document.body;
+const color = document.querySelector('#cor');
+
+const defaultColor = color.value;
+corpo.style.backgroundColor = defaultColor;
+
+// Sempre que o usuário mexe no input, a cor munda automaticamente
+color.addEventListener('input', function mudarCor() {
+    corpo.style.backgroundColor = color.value;
+});

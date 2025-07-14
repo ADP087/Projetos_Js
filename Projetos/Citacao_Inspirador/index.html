@@ -31,8 +31,40 @@
 </head>
 <body>
     <header>
+        <div id="menu">
+            <div class="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        </div>
+
+        <nav class="nav-prim">
+            <img src="./../../Assents/Midia/Logo-Appren-transparente.png" alt="Logo ApprenCode">
+
+            <a href="./../../index.html">Início</a>
+
+            <nav class="nav-sec">
+                <p onclick="menuSecOpen()">Projetos <span id="seta">▼</span></p>
+
+                <ul class="links">
+                    <li><a href="./../Seletor_cor/index.html">Seletor de Cores</a></li>
+                    <li><a href="./index.html">Citações Inspiradoras</a></li>
+                    <li><a href="./../IMC/index.html">Claculo IMC</a></li>
+                    <li><a href="./../Click/index.html">Contador de Clicks</a></li>
+                    <li><a href="./../Cronometro/index.html">Cronômetro</a></li>
+                    <li><a href="./../Kanban/index.html">Quadro Kanban</a></li>
+                    <li><a href="./../Lista_tarefas/index.html">Listas de tarefas</a></li>
+                    <li><a href="./../Compras/index.html">Compras</a></li>
+                    <li><a href="./../Calculadora/index.html">Calculadora</a></li>
+                </ul>
+            </nav>
+        </nav>
+
+        <div class="menu-bg"></div>
+
         <a href="./../../index.html"><img src="./../../Assents/Midia/javascript.png" alt="Logo_Js"></a>
-        <h1>Frase para te Inspirar </h1>
+        <h1>Citações Inspiradoras</h1>
     </header>
 
     <div class="container">
@@ -52,6 +84,9 @@
     </div>
 
     <footer>
+        <a href="https://www.instagram.com/apprendcode/" target="_blank">
+            <img src="./../../Assents/Midia/instagram-logo-icon.png" alt="Link para o Instagram">
+        </a>
         <a href="https://www.linkedin.com/in/arthurpassarelli" target="_blank">
             <img src="./../../Assents/Midia/linkedin_logo_icon.png" alt="Link para o linkedin">
         </a>
@@ -59,7 +94,7 @@
             <img src="./../../Assents/Midia/github-logo_icon.png" alt="Link para o github">
         </a>
 
-            <h3>Arthur Passarelli</h3>
+            <h3>ApprenCode - Js</h3>
     </footer>
 
     <script src="script.js"></script>
