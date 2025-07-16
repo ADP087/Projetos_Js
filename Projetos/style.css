@@ -217,17 +217,6 @@ header h1 {
     gap: 30px;
 }
 
-.botao-ind{
-    padding: 5px;
-    width: 10vw;
-    background-color: var(--botoes);
-    color: white;
-    font-size: 0.8em;
-    border: solid 1px var(--botoes);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .botoes button{
     padding: 20px;
     width: 10vw;
@@ -282,4 +271,51 @@ footer img{
     width: 80px;
     height: 80px;
     margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Responsividade do menu lateral */
+    .nav-prim {
+        width: 0;
+        font-size: 2em;
+    }
+
+    .nav-prim img{
+        height: 40%;
+        width: 100%;
+    }
+
+    .nav-prim.change {
+        width: 50vw;
+    }
+
+    .botoes {
+    flex-direction: column;
+    gap: 15px;
+    height: auto; /* Isso é importante */
+    width: 100%;
+    align-items: center; /* Para centralizar os botões */
+    }
+
+    .botoes button {
+        width: 80%;
+        font-size: 1em;
+        padding: 10px; /* Não zere o padding */
+    }
+
+    /* Responsividade do footer */
+    footer {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    footer img {
+        width: 60px;
+        height: 60px;
+    }
 }
