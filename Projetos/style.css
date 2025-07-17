@@ -212,14 +212,12 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45%;
     width: 100%;
     gap: 30px;
 }
 
 .botoes button{
     padding: 20px;
-    width: 10vw;
     background-color: var(--botoes);
     color: white;
     font-size: 1em;
@@ -279,15 +277,29 @@ footer img{
         gap: 10px;
     }
 
-    /* Responsividade do menu lateral */
-    .nav-prim {
-        width: 0;
-        font-size: 2em;
+    #menu {
+        top: 65px;
     }
 
-    .nav-prim img{
+    .menu-bar {
+        width: 100%;
+    }
+
+    .bar {
+        height: 8px;
+    }
+
+    .nav-prim {
+        width: 0;
+    }
+
+    .nav-prim img {
         height: 40%;
         width: 100%;
+    }
+
+    .nav-sec a{
+        font-size: 0.5em;
     }
 
     .nav-prim.change {
@@ -295,17 +307,17 @@ footer img{
     }
 
     .botoes {
-    flex-direction: column;
-    gap: 15px;
-    height: auto; /* Isso é importante */
-    width: 100%;
-    align-items: center; /* Para centralizar os botões */
+        flex-direction: column;
+        gap: 15px;
+        height: auto; 
+        width: 100%;
+        align-items: center; 
     }
 
     .botoes button {
         width: 80%;
         font-size: 1em;
-        padding: 10px; /* Não zere o padding */
+        padding: 10px; 
     }
 
     /* Responsividade do footer */
