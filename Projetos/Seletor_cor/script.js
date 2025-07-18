@@ -9,13 +9,13 @@ function menuSecOpen(){
     document.querySelector('#seta').classList.toggle('girar');
 }
 
+// ================================================
+
 const corpo = document.body;
 const color = document.querySelector('#cor');
 
-const defaultColor = color.value;
-corpo.style.backgroundColor = defaultColor;
+corpo.style.backgroundColor = color.value;
 
-// Sempre que o usuário mexe no input, a cor munda automaticamente
-color.addEventListener('input', function mudarCor() {
+color.addEventListener('input', () => {
     corpo.style.backgroundColor = color.value;
 });
