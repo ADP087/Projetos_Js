@@ -8,34 +8,83 @@
     <link rel="stylesheet" href="../style.css">
 
     <style>
-        h2{
+        h2 {
             font-size: 1.8em;
             margin-bottom: 15px;
         }
 
-        .produto{
+        .produto {
             display: flex;
             justify-content: space-between;
             margin-top: 5px;
             font-size: 1.2em;
         }
 
-        .nome-prod{
+        .nome-prod {
             font-size: 1.2em;
             color: var(--botoes);
         }
 
-        .botoes{
+        .botoes {
             width: 20%;
         }
 
-        .botoes button{
+        .botoes button {
             padding: 10px;
         }
 
-        .total{
-            margin-top: 15px;
+        .final {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .final button {
+            padding: 20px;
+            background-color: var(--botoes);
+            color: white;
+            font-size: 1em;
+            border: solid 1px var(--botoes);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .final button:hover {
+            background-color: var(--botoes-hover);
+            border: solid 1px var(--botoes-hover);
+        }
+
+        .total {
             font-size: 2em;
+        }
+
+        @media (max-width: 768px) {
+            .produto {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                font-size: 1em;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+            }
+
+            .botoes {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .botoes button {
+                flex: 1;
+                margin: 0 5px;
+            }
+
+            .botoes span {
+                flex: 1;
+                text-align: center;
+                line-height: 38px;
+            }
         }
     </style>
 </head>
@@ -131,7 +180,10 @@
             </div>
         </div>
 
-        <p class="total">Total: R$<span class="vaTotal">0,00</span></p>
+        <div class="final">
+            <button class="limpar">Limpar</button>
+            <p class="total">Total: R$<span class="vaTotal">0,00</span></p>
+        </div>
     </div>
 
     <div class="arquivos">

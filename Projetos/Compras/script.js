@@ -9,8 +9,12 @@ function menuSecOpen(){
     document.querySelector('#seta').classList.toggle('girar');
 }
 
+// ===============================================
+
+const spans = document.querySelectorAll('.botoes span');
 const mais = document.querySelectorAll('.mais');
 const menos = document.querySelectorAll('.menos');
+const clear = document.querySelector('.limpar');
 const spanTotal = document.querySelector('.vaTotal');
 
 let total = 0;
@@ -28,8 +32,6 @@ mais.forEach(btn => {
 
         quant++;
         total += valor;
-
-        console.log(total)
 
         span.innerText = quant;
         spanTotal.innerText = total.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
@@ -61,3 +63,11 @@ menos.forEach(btn => {
 function parseValor(valor) {
     return Number(valor.replace(/\./g,'').replace(',', '.'));
 }
+
+clear.addEventListener('click', () => {
+    spans.forEach(span => {
+        span.innerText = '0';
+        spanTotal.innerText = '0,00';
+        total = 0;
+    });
+});
