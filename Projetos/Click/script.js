@@ -9,6 +9,8 @@ function menuSecOpen(){
     document.querySelector('#seta').classList.toggle('girar');
 }
 
+// =====================================================
+
 let contador = 0;
 const resultado = document.querySelector('.numero');
 

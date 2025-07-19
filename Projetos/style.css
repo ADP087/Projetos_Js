@@ -208,7 +208,7 @@ header h1 {
     text-align: center;
 }
 
-.botoes{
+.botoes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +216,7 @@ header h1 {
     gap: 30px;
 }
 
-.botoes button{
+.botoes button {
     padding: 20px;
     background-color: var(--botoes);
     color: white;
@@ -226,13 +226,13 @@ header h1 {
     cursor: pointer;
 }
 
-.botoes button:hover{
+.botoes button:hover {
     background-color: var(--botoes-hover);
     border: solid 1px var(--botoes-hover);
 }
 
 /*==== Arquivos ====*/
-.arquivos{
+.arquivos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -241,7 +241,7 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.arquivos a{
+.arquivos a {
     padding: 1%;
     color: white;
     background-color: var(--botoes);
@@ -250,12 +250,12 @@ header h1 {
     font-size: 1.5em;
 }
 
-.arquivos a:hover{
+.arquivos a:hover {
     background-color: var(--botoes-hover);
 }
 
 /*==== Footer ====*/
-footer{
+footer {
     background-color: var(--header);
     color: var(--letras-brancas);
     display: flex;
@@ -265,7 +265,7 @@ footer{
     justify-content: center;
 }
 
-footer img{
+footer img {
     width: 80px;
     height: 80px;
     margin-right: 10px;
