@@ -196,6 +196,7 @@ header h1 {
     transform: translateY(-6px) rotateZ(-45deg);
 }
 
+
 /*==== Parte Principal ====*/
 .container {
     background-color: var(--container);
@@ -226,7 +227,14 @@ header h1 {
     cursor: pointer;
 }
 
-.botoes button:hover {
+@media (hover: hover) and (pointer: fine) {
+    .botoes button:hover {
+        background-color: var(--botoes-hover);
+        border: solid 1px var(--botoes-hover);
+    }
+}
+
+.botoes button:active {
     background-color: var(--botoes-hover);
     border: solid 1px var(--botoes-hover);
 }
@@ -242,7 +250,7 @@ header h1 {
 }
 
 .arquivos a {
-    padding: 1%;
+    padding: 1.5%;
     color: white;
     background-color: var(--botoes);
     text-decoration: none;
@@ -250,7 +258,13 @@ header h1 {
     font-size: 1.5em;
 }
 
-.arquivos a:hover {
+@media (hover: hover) and (pointer: fine) {
+    .arquivos a:hover {
+        background-color: var(--botoes-hover);
+    }
+}
+
+.arquivos a:active {
     background-color: var(--botoes-hover);
 }
 

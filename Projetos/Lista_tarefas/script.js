@@ -9,6 +9,8 @@ function menuSecOpen(){
     document.querySelector('#seta').classList.toggle('girar');
 }
 
+// =======================================================
+
 const inputTarefa = document.querySelector('#input-tarefa');
 const btnAdicionar = document.querySelector('.botao-ind');
 const listaTarefas = document.querySelector('#lista-tarefas');

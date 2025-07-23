@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="../style.css">
 
     <style>
-        .container{
+        .container {
             margin-top: 10px;
+            width: 60%;
         }
-        #input-tarefa{
+
+        #input-tarefa {
             height: 30px;
             width: 100%;
             max-width: 300px;
             margin: 10px auto;
         }
 
-        .botao-ind{
+        .botao-ind {
             padding: 5px;
-            width: 10vw;
+            width: 30%;
             background-color: var(--botoes);
             color: white;
             font-size: 0.8em;
@@ -29,17 +31,17 @@
             cursor: pointer;
         }
 
-        .tarefas{
+        .tarefas {
             background-color: white;
             height: 50vh;
-            width: 50vh;
+            width: 100%;
             border-radius: 10px;
             margin: auto;
             margin-top: 20px;
             overflow-y: auto;
         }
 
-        .tarefas ul li{
+        .tarefas ul li {
             list-style: none;
             display: flex;
             width: 100%;
@@ -47,27 +49,28 @@
             cursor: pointer;
             background-color: rgb(192, 192, 192);
             border-radius: 5px;
+            margin-bottom: 5px;
         }
 
-        ul li input{
+        ul li input {
             width: 20px;
             height: 30px;
             margin-right: 10px;
             cursor: pointer;
         }
 
-        ul li p{
+        ul li p {
             margin-left: 10px;
             font-size: 1.1em;
         }
 
-        ul li .botoes-tarefa{
+        ul li .botoes-tarefa {
             display: flex;
             margin-left: auto;
             gap: 10px;
         }
 
-        .botoes-tarefa button{
+        .botoes-tarefa button {
             background-color: var(--botoes);
             color: white;
             border: none;
@@ -76,16 +79,25 @@
             cursor: pointer;
         }
 
-        .botoes-tarefa button:hover{
+        @media (hover: hover) and (pointer: fine) {
+            .botoes-tarefa button:hover {
+                background-color: var(--botoes-hover);
+            }
+        }
+
+        .botoes-tarefa button:active {
             background-color: var(--botoes-hover);
         }
 
-        .tarefas ul .clicado{
-            text-decoration: line-through;
+        .tarefas ul .clicado {
             background-color: rgb(145, 145, 145);
         }
 
-        .arquivos{
+        .clicado p {
+            text-decoration: line-through;
+        }
+
+        .arquivos {
             margin-bottom: 5px;
         }
     </style>
@@ -141,8 +153,8 @@
     </div>
 
     <div class="arquivos">
-        <a href="#">Arquivo Base</a>
-        <a href="#">Arquivo Resposta</a>
+        <a href="./Arq-Downloads/Base-Tarefa.zip">Arquivo Base</a>
+        <a href="./Arq-Downloads/Resposta-Tarefa.zip">Arquivo Resposta</a>
     </div>
 
     <footer>

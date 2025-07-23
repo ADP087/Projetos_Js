@@ -9,6 +9,8 @@ function menuSecOpen(){
     document.querySelector('#seta').classList.toggle('girar');
 }
 
+// =========================================
+
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('dragstart', e => {
         e.currentTarget.classList.add('dragging');
