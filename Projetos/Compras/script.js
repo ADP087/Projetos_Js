@@ -28,8 +28,6 @@ mais.forEach(btn => {
         let valor = parseValor(spanValor.innerText);
         let quant = Number(span.innerText);
 
-        console.log(`1: ${valor}`);
-
         quant++;
         total += valor;
 
