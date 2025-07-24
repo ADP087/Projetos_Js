@@ -9,6 +9,8 @@ function menuSecOpen(){
     document.querySelector('#seta').classList.toggle('girar');
 }
 
+// =================================================================
+
 const calculadora = document.querySelector('.calculadora');
 const display = document.querySelector('#display');
 let erro = false;
@@ -87,14 +89,12 @@ function resConta() {
 
     let conta = display.value.replace(/x/gi, '*'); // Troca todos os 'x' por '*', g no regex significa “global”, ou seja, troca todas as ocorrências de 'x'. E o i deixa todas as letras minusculas
 
-    const ultimo = display.value.slice(-1); // último caractere do display
+    const ultimo = display.value.slice(-1); // Pega último caractere do display
 
-    if(isNaN(ultimo)) {
-        conta += '0';
-    }
-
-    if(ultimo == '/') {
+    if(ultimo == '*' || ultimo == '/') {
         conta += '1';
+    } else if(isNaN(ultimo)) {
+        conta = conta.slice(0, -1); // Remove o último caractere inválido
     }
 
     try {
