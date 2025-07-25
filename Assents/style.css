@@ -123,3 +123,85 @@ footer img{
     height: 80px;
     margin: 0 5px;
 }
+
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .recepcao img {
+        display: none;
+    }
+
+    .recepcao {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .recepcao img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .recepcao .texto {
+        margin: 30px auto 0 auto;
+        font-size: 1.5em;
+    }
+
+    .recepcao a {
+        display: none;
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .recepcao {
+        font-size: 1.1em;
+    }
+
+    #container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #container a {
+        font-size: 1.2em;
+        padding: 15px;
+        height: auto;
+    }
+
+    footer {
+        gap: 10px;
+        font-size: 1.5em;
+    }
+
+    footer img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recepcao .texto h2 {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+    
+    .botao {
+        padding: 12px 30px;
+        font-size: 0.9em;
+    }
+
+    #container a {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    footer h3 {
+        font-size: 1.2em;
+    }
+}
