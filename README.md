@@ -21,7 +21,7 @@ E mostrando que a programação não é um bixo de sete cabeças, mas sim uma ha
 
 <h2>📅 Planejamento Futuro</h2>
 <ul>
-    <li><p>Criar uma interface mais amigável com layout responsivo para todos os dispositivos</p></li>
+    <li><p>Melhorar o estilo do site, criar uma interface mais amigável com layout responsivo para todos os dispositivos</p></li>
     <li><p>Criar mais desafios com níveis de dificuldade (iniciante, intermediário)</p></li>
     <li><p>Permitir que visitantes enviem seus próprios desafios</p></li>
 </ul>
