@@ -11,12 +11,30 @@ function menuSecOpen(){
 
 // ========================================================
 
+const inputP = document.querySelector('#peso');
+const inputA = document.querySelector('#altura');
 const form = document.querySelector('#form');
 
 function criaP(){
     const p = document.createElement('p');
     return p;
 }
+
+inputP.addEventListener("input", () => {
+    let valor = inputP.value.replace(/\D/g, ""); // Remove tudo que não for número
+
+    inputP.value = valor;
+});
+
+inputA.addEventListener("input", () => {
+    let valor = inputA.value.replace(/\D/g, ""); // Remove tudo que não for número
+
+    if (valor.length >= 3) {
+        valor = valor.slice(0, 1) + "." + valor.slice(1); // Coloca '.' depois do primeiro dígito
+    }
+
+    inputA.value = valor;
+});
 
 form.addEventListener('submit', function(evento){
     evento.preventDefault();

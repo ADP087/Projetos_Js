@@ -104,14 +104,4 @@ function resConta() {
         display.value = 'Conta inválida!';
         erro = true;
     }
-
-    display.focus();
 }
-
-calculadora.addEventListener('click', () => {
-    display.focus();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    display.focus();
-});
