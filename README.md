@@ -1,9 +1,5 @@
 ﻿# ApprenCode - JavaScript
 
-<h1>Bem-vindo ao ApprenCode! 🚀🎯</h1>
-
-<img src="./Assents/Midia/ApprenCode-Js.png" alt="ApprenCode-Js">
-
 <h2> 🧠 Sobre o projeto</h2>
 <p>O ApprenCode é um projeto pessoal com o objetivo de ajudar iniciantes a treinar JavaScript de forma prática e acessível. Aqui, eu crio pequenos desafios, explicações que mostram na prática, como o JavaScript funciona. A ideia aqui é simples: <strong>aprender fazendo!</strong> ✨</p>
 
